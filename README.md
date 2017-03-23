@@ -1,4 +1,3 @@
-# center.js
 我们在编写html页面的时候，不可避免的会遇到元素居中的问题，水平居中还好说 我们可以通过设置margin: auto;text-align: center;来实现水平居中。垂直居中的话，单个标签我们可以通过设置line-height来实现垂直居中，但是多个标签的时候就没法这么做了。 有一种方法就是通过js算出元素的left和top值来实现居中。一般都是获取父元素的宽高，再获取子元素的宽高，父元素的宽高减去子元素的宽高除以二就是元素本身的left和top的值。 为了方便开发，我将居中写成了几个方法，开发的时候直接调用即可，下面是代码的实现。
 
 **js**
@@ -166,3 +165,4 @@ function client(){
 </html>
 ```
 
+![这里写图片描述](http://img.blog.csdn.net/20170323152332801?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveXV6aGlxaWFuZ18xOTkz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
