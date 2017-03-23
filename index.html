@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+	<script type="text/javascript" src="js/centerJs.js" ></script>
+		<style>
+			.parent {
+				position: absolute;
+				width: 500px;
+				height: 300px;
+				border: 3px solid red;
+			}
+			.child {
+				width: 100x;
+				height: 100px;
+				position: absolute;
+				border: 2px solid black;
+			}
+			#p {
+				position: absolute;
+				width: 300px;
+				height: 300px;
+				border: 1px solid blue;
+			}
+			#c {
+				position: absolute;
+				border: 1px solid green;
+			}
+		</style>
+		<script>
+			window.onload=function  () {
+				center();
+			}
+			
+			window.onresize=function  () {
+				center();
+			}
+			
+			function center () {
+				var p=document.getElementsByClassName("parent")[0];
+				var c=document.getElementsByClassName("child")[0];
+				var p1=document.getElementById("p");
+				var c1=document.getElementById("c");
+				
+				centerParent(p)
+				centerverticalWithEle(c,p);
+				centerHorizontal(p1);
+				centerParentWithEle(c1,p1);
+			}
+		</script>
+
+	</head>
+
+	<body style="width: 100%;height: 100%;">
+
+		<div class="parent">
+		父元素
+			<div class="child">子元素</div>
+		</div>
+
+		<div id="p">
+		父元素
+			<div id="c">子元素</div>
+		</div>
+	
+	</body>
+
+</html>
